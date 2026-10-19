@@ -1,0 +1,39 @@
+package com.centro.modelo;
+
+import java.time.LocalDateTime;
+
+public class Tratamiento {
+    private int id;
+    private LocalDateTime fecha;
+    private String descripcion;
+    private double coste;
+    private int idMascota;
+
+    public Tratamiento() {}
+
+    public Tratamiento(String descripcion, double coste, int idMascota) {
+        this.descripcion = descripcion;
+        this.coste = coste;
+        this.idMascota = idMascota;
+    }
+
+    public Tratamiento(int id, LocalDateTime fecha, String descripcion, double coste, int idMascota) {
+        this.id = id;
+        this.fecha = fecha;
+        this.descripcion = descripcion;
+        this.coste = coste;
+        this.idMascota = idMascota;
+    }
+
+    // Getters y Setters
+    public int getId() { return id; }
+    public void setId(int id) { this.id = id; }
+    public LocalDateTime getFecha() { return fecha; }
+    public void setFecha(LocalDateTime fecha) { this.fecha = fecha; }
+    public String getDescripcion() { return descripcion; }
+    public void setDescripcion(String descripcion) { this.descripcion = descripcion; }
+    public double getCoste() { return coste; }
+    public void setCoste(double coste) { this.coste = coste; }
+    public int getIdMascota() { return idMascota; }
+    public void setIdMascota(int idMascota) { this.idMascota = idMascota; }
+}
